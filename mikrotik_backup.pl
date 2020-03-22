@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl 
+#!/usr/bin/perl 
 
 use strict;
 use Net::OpenSSH;
@@ -19,7 +19,7 @@ my $INTERFACE = '/interface print';
 my $FIRMWARE ='/system routerboard print';
 my $HOSTNAME  ='/system identity print'; 
 #my $SYSTEM_UPGRADE  ='/system routerboard upgrade'; 
-my $SSHPASS = '/usr/local/bin/sshpass';
+my $SSHPASS = '/usr/bin/sshpass';
 my $SCP = '/usr/bin/scp';
 
 ################################ WORK #########################################
