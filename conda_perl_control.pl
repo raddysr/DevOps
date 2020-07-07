@@ -9,8 +9,6 @@ if(!$param){
 	exit; 
 }
 
-
-
 if($param eq '-s'){
 	qx/conda config --set auto_activate_base false/;
 	print"Anaconda stopped!\n"; 
