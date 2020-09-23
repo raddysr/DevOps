@@ -15,4 +15,3 @@ if($param eq '-s'){
 	qx/conda config --set auto_activate_base true/;
 	print"Anaconda is now running!\n"; 
 }
-
