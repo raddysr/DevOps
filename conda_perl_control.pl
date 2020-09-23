@@ -16,4 +16,3 @@ if($param eq '-s'){
 	print"Anaconda is now running!\n"; 
 }
 
-
