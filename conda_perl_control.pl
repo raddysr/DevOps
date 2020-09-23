@@ -3,6 +3,7 @@ use strict;
 use warnings;
 
 my $param = shift;  
+
 if(!$param){
 	print"Run wiht parameter -s/-r!\n"; 
 	exit; 
