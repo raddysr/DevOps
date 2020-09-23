@@ -4,7 +4,7 @@ use warnings;
 
 my $param = shift;  
 
-if(!$param or $param ne '-s'){
+if(!$param or $param ne '-s' or $param ne '-r'){
 	print"Run wiht parameter -s/-r!\n"; 
 	exit; 
 }
