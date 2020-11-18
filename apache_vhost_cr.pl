@@ -2,6 +2,8 @@
 use strict;
 use warnings;
 
+
+
 print"Please insert the host name: \n";
 
 my $name = <STDIN>;
