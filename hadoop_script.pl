@@ -8,7 +8,7 @@ my $start_yarn	= "/home/hadoop/hadoop-3.3.0/sbin/start-yarn.sh";
 my $stop 	= "/home/hadoop/hadoop-3.3.0/sbin/stop-dfs.sh";
 my $stop_yarn	= "/home/hadoop/hadoop-3.3.0/sbin/stop-yarn.sh";
 
-if( $signal eq 'start'){
+if($signal eq 'start'){
 
 	print qx/$start/;	
 	print qx/$start_yarn/;
