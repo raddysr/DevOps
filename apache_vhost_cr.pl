@@ -8,6 +8,8 @@ print"Please insert the host name: \n";
 
 my $name = <STDIN>;
 
+chomp($name); 
+
 my $USER ='$USER';
 
 my $conf =qq(
