@@ -2,8 +2,6 @@
 use strict;
 use warnings;
 
-
-
 print"Please insert the host name: \n";
 
 my $name = <STDIN>;
@@ -21,7 +19,7 @@ my $conf =qq(
     ErrorLog \${APACHE_LOG_DIR}/error.log
     CustomLog \${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
-);  
+);  <h1>
 
 my $conf_name ="/etc/apache2/sites-available/$name.conf";   
 
@@ -34,7 +32,7 @@ print"Start work!!!\n";
 open(FH, '>', $index) or die $!;
 
 print FH "<h1>This is $name </h1>"; 
-
+<h1>
 close FH;
 
 `sudo chown -R $USER:$USER /var/www/$name`;
