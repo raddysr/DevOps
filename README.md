@@ -1,6 +1,7 @@
-# DevOps
+# Tools
 
-Some very basic scripts:
+Some very basic scripts/programs that I've created for automating basic tasks :)
+
 
 *general_report.pl and report.pl - create report of deamons(FreeBSD jails)
 
