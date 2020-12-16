@@ -25,7 +25,7 @@ func main() {
 
 	pdf.MultiCell(190, 5, string(content), "0", "0", false)
 
-	_ = pdf.OutputFileAndClose("test.pdf")
+	_ = pdf.OutputFileAndClose(file)
 
 	fmt.Println("PDF Created")
 }
