@@ -4,13 +4,14 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"os"
 
 	"github.com/jung-kurt/gofpdf"
 )
-
+//run the program as follows script executable <file_to_convert>
 func main() {
-	//PUT here the name of the file
-	file := "test.txt"
+	
+	file := os.Args[1]
 
 	content, err := ioutil.ReadFile(file)
 
