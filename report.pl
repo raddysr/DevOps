@@ -46,9 +46,7 @@ sub scan_services {
 	foreach my $filename ( @service_run_files ){
 	
 		if($filename=~ /^\#/){
-		
 			next; 
-		
 		}
 		
 		$filename =~ s/[\n\r]//g;
@@ -56,13 +54,9 @@ sub scan_services {
 		$filename = $filename_parts[1];
 		$filename =~ s/\/usr\/home\//\/home\//; 
 		$uniq_files->{$filename} = $filename;
-		
-		
 	}
-
 	return 1;
 }
-
 
 sub scan_crontab { 
 
@@ -75,9 +69,7 @@ sub scan_crontab {
 	foreach(@crontab){
 	
 		if($_=~ /^\#/){
-	
 			next;
-	
 		}
         	
 		my($con1, $cron2, $cron3, $cron4, $cron5, $script, $arguments)  =split/\t|\s+/,$_;
@@ -92,9 +84,7 @@ sub scan_crontab {
 sub generate_report {
 	
 	my $params = shift;
-	
 	my $uniq_files = $params->{UNIQ_FILES_REF} ;
-
 	my($sec, $min, $hour, $mday,$mon,$year,$wday,$yday,$idst)=localtime();
 
 	my $hostname = `$HOSTNAME_CMD`;
@@ -113,7 +103,6 @@ sub generate_report {
 	}
 
 	print_debug( { MSG => "Report complete!\n"});
-
 	close FILE;
 
 	return 1;
