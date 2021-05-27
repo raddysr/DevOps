@@ -1,6 +1,6 @@
 # Tools
 
-Some very basic scripts/programs that I've created for automating simple tasks :)
+Some very basic scripts/programs that I've created for automating simple tasks
 
 
 *general_report.pl and report.pl - create report of deamons(FreeBSD jails)
