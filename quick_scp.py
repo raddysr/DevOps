@@ -5,12 +5,12 @@ from scp import SCPClient
 from sys import argv
 from os import system
 
-HOST='lxaviap001'
-PORT = 22
-USER='aaaiviz'
+HOST='name/ip'
+PORT = 0
+USER='user'
 PASS = argv[1]
-SOURCE_PATH = '/home/postgres_bak/'
-TARGET_PATH = '/home/aaaiviz/postgres_backup/'
+SOURCE_PATH = '/path/to/file/'
+TARGET_PATH = '/path/to/destination/'
 BACKFILES = argv[2:]
 
 def scp_to_backup(host, port, user, password, source, target):
