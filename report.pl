@@ -1,11 +1,9 @@
 #!/usr/local/bin/perl -wT
-
 use strict;
 use warnings;
 
 $ENV{PATH} = "";
 $ENV{ENV} = "";
-
 my $DEBUG_PARAM  = $$;
 my $BASE_PATH	 = "/tmp/cron_services_list/";
 my $HOSTNAME_CMD = "/bin/hostname";
