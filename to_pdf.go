@@ -8,7 +8,9 @@ import (
 
 	"github.com/jung-kurt/gofpdf"
 )
+
 //run the program as follows script executable <file_to_convert>
+
 func main() {
 	
 	file := os.Args[1]
